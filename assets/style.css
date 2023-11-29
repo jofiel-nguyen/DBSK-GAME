@@ -1,0 +1,119 @@
+#game-board {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px auto;
+}
+h1 {
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+
+}
+.snake {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+
+.food {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url('');
+  font-size: 20px;
+  line-height: 1;
+}
+
+.food::before {
+  content: '🍎';
+  display: block;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer img {
+  margin-right: 15px;
+}
+
+/* For tablets and laptops (min-width: 768px) */
+@media (min-width: 768px) {
+  #game-board {
+      background-color: #baa4a4;
+  }
+}
+
+/* For phones (max-width: 480px) */
+@media (max-width: 480px) {
+  #game-board {
+      background-color: #b1d5b1;
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+  }
+
+  button {
+      padding: 8px 16px;
+      font-size: 14px;
+      margin: 10px auto;
+  }
+
+  .snake {
+      width: 15px;
+      height: 15px;
+  }
+
+  .food {
+      width: 15px;
+      height: 15px;
+  }
+}
+
+/* For phones with max-width: 320px */
+@media (max-width: 320px) {
+  #game-board {
+      background-color: #bac2ba;
+      width: 250px;
+      height: 250px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  button {
+      padding: 6px 12px;
+      font-size: 6px;
+  }
+
+  .snake {
+      width: 15px;
+      height: 15px;
+  }
+
+  .food {
+      width: 15px;
+      height: 15px;
+  }
+}
