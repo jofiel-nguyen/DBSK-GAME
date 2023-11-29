@@ -14,7 +14,7 @@ YunJae-GAME is a classic snake game where players control a snake to collect ite
 
 ## Getting Started
 
-To play the game, simply [provide instructions on how to access or run the game].
+To play the game, simply play like Snake Game.
 
 ## Screenshots
 
