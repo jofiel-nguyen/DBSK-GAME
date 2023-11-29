@@ -1,3 +1,5 @@
+
+
 #game-board {
   position: absolute;
   top: 50%;
@@ -6,22 +8,28 @@
   width: 300px;
   height: 300px;
   border: 1px solid black;
+
+}
+body {
+  background-image: url('./background.png');
+  background-size: contain;
 }
 
 button {
-  margin: 10px;
+  margin: 10px auto; /* Adjusted to a single margin property */
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  margin: 10px auto;
 }
-
 h1 {
-  color: #333;
+  color: rgb(107, 10, 10);
   margin-top: 20px;
   text-align: center;
+
+
 }
+
 
 .snake {
   position: absolute;
@@ -41,7 +49,6 @@ h1 {
   width: 20px;
   height: 20px;
   background-color: transparent;
-  background-image: url('');
   font-size: 20px;
   line-height: 1;
 }
@@ -84,7 +91,7 @@ footer img {
   button {
     padding: 8px 16px;
     font-size: 14px;
-    margin: 10px auto;
+   
   }
 
   .snake {
