@@ -11,7 +11,7 @@
 
 }
 body {
-  background-image: url('./background.png');
+  background-image: url('../background.png');
   background-size: contain;
 }
 
@@ -23,9 +23,10 @@ button {
   text-align: center;
 }
 h1 {
-  color: rgb(107, 10, 10);
+  color: whitesmoke;
   margin-top: 20px;
   text-align: center;
+  background-color: #333;
 
 
 }
@@ -35,13 +36,24 @@ h1 {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-color: green;
+  background-image: url("./dbskimage/food5.png");
 }
 
 .snake-head {
   background-image: url('./logo.png');
   background-size: cover;
-  /* You may need to set the width and height for the head if it's different from the body */
+}
+.snake {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("./dbskimage/food5.png"); 
+  background-size: cover;
+}
+
+.snake-head {
+  background-image: url('./logo.png');
+  background-size: cover;
 }
 
 .food {
@@ -54,9 +66,14 @@ h1 {
 }
 
 .food::before {
-  content: '🍎';
+  content: '';  
   display: block;
+  width: 20px;   
+  height: 20px;
+  background-image: url('./dbskimage/food2.png'); 
+  background-size: cover;
 }
+
 
 footer {
   background-color: #333;
