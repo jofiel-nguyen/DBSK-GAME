@@ -46,14 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function drawSnake() {
         gameBoard.innerHTML = '';
-        snake.forEach(segment => {
+        snake.forEach((segment, index) => {
             const snakeElement = document.createElement('div');
             snakeElement.classList.add('snake');
+            
+            if (index === 0) {
+                snakeElement.classList.add('snake-head');
+                
+            }
+    
             snakeElement.style.left = segment.x * gridSize + 'px';
             snakeElement.style.top = segment.y * gridSize + 'px';
             gameBoard.appendChild(snakeElement);
         });
     }
+    
 
     function drawFood() {
         const foodElement = document.createElement('div');

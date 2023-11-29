@@ -16,17 +16,24 @@ button {
   text-align: center;
   margin: 10px auto;
 }
+
 h1 {
   color: #333;
   margin-top: 20px;
   text-align: center;
-
 }
+
 .snake {
   position: absolute;
   width: 20px;
   height: 20px;
   background-color: green;
+}
+
+.snake-head {
+  background-image: url('./logo.png');
+  background-size: cover;
+  /* You may need to set the width and height for the head if it's different from the body */
 }
 
 .food {
@@ -43,6 +50,7 @@ h1 {
   content: '🍎';
   display: block;
 }
+
 footer {
   background-color: #333;
   color: #fff;
@@ -60,60 +68,65 @@ footer img {
 /* For tablets and laptops (min-width: 768px) */
 @media (min-width: 768px) {
   #game-board {
-      background-color: #baa4a4;
+    background-color: #baa4a4;
   }
 }
 
 /* For phones (max-width: 480px) */
 @media (max-width: 480px) {
   #game-board {
-      background-color: #b1d5b1;
-      width: 300px;
-      height: 300px;
-      border: 1px solid black;
+    background-color: #b1d5b1;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
   }
 
   button {
-      padding: 8px 16px;
-      font-size: 14px;
-      margin: 10px auto;
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 10px auto;
   }
 
   .snake {
-      width: 15px;
-      height: 15px;
+    width: 15px;
+    height: 15px;
   }
 
   .food {
-      width: 15px;
-      height: 15px;
+    width: 15px;
+    height: 15px;
   }
 }
 
 /* For phones with max-width: 320px */
 @media (max-width: 320px) {
   #game-board {
-      background-color: #bac2ba;
-      width: 250px;
-      height: 250px;
+    background-color: #bac2ba;
+    width: 250px;
+    height: 250px;
   }
 
   h1 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   button {
-      padding: 6px 12px;
-      font-size: 6px;
+    padding: 6px 12px;
+    font-size: 6px;
   }
 
   .snake {
-      width: 15px;
-      height: 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .snake-head {
+    background-image: url('./logo.png');
+    background-size: cover;
   }
 
   .food {
-      width: 15px;
-      height: 15px;
+    width: 15px;
+    height: 15px;
   }
 }
