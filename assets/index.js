@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let snake = [{ x: 0, y: 0 }];
     let food = { x: 0, y: 0 };
     let direction = 'right';
-    let isButtonEnabled = false; // Set initial state to false
+    let isButtonEnabled = false;
     let historyScores = [];
 
     const upButton = document.getElementById('upButton');
